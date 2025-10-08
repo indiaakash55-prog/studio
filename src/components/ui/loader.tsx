@@ -1,4 +1,4 @@
-import { OmIcon } from "@/components/icons/om-icon";
+import { SwastikaIcon } from "@/components/icons/swastika-icon";
 import { cn } from "@/lib/utils";
 
 export function Loader({ className, size = "md" }: { className?: string, size?: "sm" | "md" | "lg" }) {
@@ -16,7 +16,7 @@ export function Loader({ className, size = "md" }: { className?: string, size?: 
   return (
     <div className={cn("relative flex items-center justify-center", sizeClasses[size], className)}>
       <div className="absolute h-full w-full animate-spin rounded-full border-4 border-solid border-primary border-t-transparent"></div>
-      <OmIcon className={cn("text-primary", iconSizeClasses[size])} />
+      <SwastikaIcon className={cn("text-primary", iconSizeClasses[size])} />
     </div>
   );
 }
