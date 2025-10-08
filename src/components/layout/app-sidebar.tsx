@@ -17,6 +17,7 @@ const links = [
   { href: "/mata-rani-aarti", label: "Mata Rani Aarti", icon: <Sparkles /> },
   { href: "/ganesh-ji-aarti", label: "Ganesh Ji Aarti", icon: <Sparkles /> },
   { href: "/vishnu-aarti", label: "Vishnu Aarti", icon: <Sparkles /> },
+  { href: "/jaharveer-baba-aarti", label: "Jaharveer Baba Aarti", icon: <Sparkles /> },
   { href: "/divya-mantra-kosh", label: "Mantra Kosh", icon: <Shield /> },
 ];
 

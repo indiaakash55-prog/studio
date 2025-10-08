@@ -39,6 +39,12 @@ const features = [
     icon: <Sparkles className="size-8 text-accent" />,
   },
   {
+    title: 'श्री जाहरवीर बाबा की आरती',
+    href: '/jaharveer-baba-aarti',
+    description: 'Blessings and protection.',
+    icon: <Sparkles className="size-8 text-accent" />,
+  },
+  {
     title: 'दिव्य मंत्र कोश',
     href: '/divya-mantra-kosh',
     description: 'A collection of powerful mantras.',
