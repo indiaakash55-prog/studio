@@ -4,7 +4,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { ArrowRight, BookOpenText, Shield, Sparkles } from 'lucide-react';
+import { ArrowRight, BookOpenText, Shield, Sparkles, BookHeart } from 'lucide-react';
 import Link from 'next/link';
 
 const features = [
@@ -49,6 +49,12 @@ const features = [
     href: '/divya-mantra-kosh',
     description: 'A collection of powerful mantras.',
     icon: <Shield className="size-8 text-accent" />,
+  },
+  {
+    title: 'पूजा की विधियाँ',
+    href: '/puja-vidhiyan',
+    description: 'Step-by-step worship guides.',
+    icon: <BookHeart className="size-8 text-accent" />,
   },
 ];
 

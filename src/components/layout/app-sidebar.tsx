@@ -8,7 +8,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { OmIcon } from "@/components/icons/om-icon";
-import { BookOpenText, Home, Shield, Sparkles } from "lucide-react";
+import { BookHeart, BookOpenText, Home, Shield, Sparkles } from "lucide-react";
 
 const links = [
   { href: "/", label: "Home", icon: <Home /> },
@@ -19,6 +19,7 @@ const links = [
   { href: "/vishnu-aarti", label: "Vishnu Aarti", icon: <Sparkles /> },
   { href: "/jaharveer-baba-aarti", label: "Jaharveer Baba Aarti", icon: <Sparkles /> },
   { href: "/divya-mantra-kosh", label: "Mantra Kosh", icon: <Shield /> },
+  { href: "/puja-vidhiyan", label: "Puja Vidhiyan", icon: <BookHeart /> },
 ];
 
 export function AppSidebar() {
@@ -38,7 +39,7 @@ export function AppSidebar() {
         <SidebarMenu>
           {links.map((link) => (
             <SidebarMenuItem key={link.href}>
-              <Link href={link.href} passHref>
+              <Link href={link.href}>
                 <SidebarMenuButton
                   isActive={pathname === link.href}
                   className="font-headline text-base"
