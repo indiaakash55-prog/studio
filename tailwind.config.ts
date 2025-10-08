@@ -10,9 +10,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['Lato', 'sans-serif'],
+        headline: ['Tiro Devanagari Hindi', 'serif'],
         code: ['monospace'],
+      },
+      boxShadow: {
+        'golden-glow': '0 0 15px hsl(var(--primary) / 0.5)',
       },
       colors: {
         background: 'hsl(var(--background))',
