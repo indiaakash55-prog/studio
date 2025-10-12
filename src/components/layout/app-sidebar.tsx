@@ -39,15 +39,16 @@ export function AppSidebar() {
         <SidebarMenu>
           {links.map((link) => (
             <SidebarMenuItem key={link.href}>
-              <Link href={link.href}>
-                <SidebarMenuButton
-                  isActive={pathname === link.href}
-                  className="font-headline text-base"
-                >
+              <SidebarMenuButton
+                asChild
+                isActive={pathname === link.href}
+                className="font-headline text-base"
+              >
+                <Link href={link.href}>
                   {link.icon}
                   <span>{link.label}</span>
-                </SidebarMenuButton>
-              </Link>
+                </Link>
+              </SidebarMenuButton>
             </SidebarMenuItem>
           ))}
         </SidebarMenu>
@@ -55,3 +56,5 @@ export function AppSidebar() {
     </>
   );
 }
+
+    
