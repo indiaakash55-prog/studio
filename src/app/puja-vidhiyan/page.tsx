@@ -12,6 +12,10 @@ import {
 } from "@/components/ui/card";
 import { pujaVidhiyan } from "@/lib/content";
 import type { Metadata } from 'next';
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Home } from "lucide-react";
+
 
 export const metadata: Metadata = {
   title: 'पूजा की विधियाँ | ऋषि विद्या',
@@ -22,7 +26,15 @@ export default function PujaVidhiyanPage() {
   return (
     <main className="flex-1 p-4 md:p-8">
       <Card className="max-w-4xl mx-auto">
-        <CardHeader>
+        <CardHeader className="relative flex-row items-center justify-center">
+          <div className="absolute top-4 left-4 md:top-1/2 md:-translate-y-1/2">
+            <Button asChild variant="ghost" size="icon">
+              <Link href="/">
+                <Home className="h-6 w-6" />
+                <span className="sr-only">Home</span>
+              </Link>
+            </Button>
+          </div>
           <CardTitle className="font-headline text-3xl md:text-4xl text-center text-accent">
             {pujaVidhiyan.title}
           </CardTitle>
