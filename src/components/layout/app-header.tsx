@@ -3,7 +3,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { OmIcon } from "@/components/icons/om-icon";
 import {
   BookHeart,
   BookOpenText,
@@ -59,7 +58,7 @@ export function AppHeader() {
   return (
     <header className="sticky top-0 z-10 flex h-16 items-center justify-between gap-4 border-b bg-background/80 px-4 backdrop-blur-sm sm:px-6">
       <Link href="/" className="flex items-center gap-2">
-        <OmIcon className="size-8 text-primary" />
+        <span className="text-4xl font-bold text-primary">ॐ</span>
         <h1 className="font-headline text-2xl font-bold text-primary">
           ऋषि विद्या
         </h1>
@@ -79,9 +78,9 @@ export function AppHeader() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="sm:max-w-xs">
+          <SheetContent side="left" className="sm:max-w-xs p-0">
               <div className="flex items-center gap-2 p-4 border-b">
-                <OmIcon className="size-8 text-primary" />
+                <span className="text-4xl font-bold text-primary">ॐ</span>
                 <h1 className="font-headline text-2xl font-bold text-primary">
                   ऋषि विद्या
                 </h1>
