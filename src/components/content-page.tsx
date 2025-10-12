@@ -26,7 +26,7 @@ export function ContentPage({ title, content }: ContentPageProps) {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="whitespace-pre-wrap font-body text-lg md:text-xl leading-relaxed text-center text-foreground/90">
+          <div className="whitespace-pre-wrap font-body text-lg md:text-xl leading-relaxed text-center text-primary">
             {content}
           </div>
         </CardContent>
