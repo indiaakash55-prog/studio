@@ -1,7 +1,5 @@
 "use client";
 
-import { SidebarProvider, Sidebar, SidebarInset } from "@/components/ui/sidebar";
-import { AppSidebar } from "./app-sidebar";
 import { AppHeader } from "./app-header";
 
 type Props = {
@@ -10,14 +8,9 @@ type Props = {
 
 export function MainLayout({ children }: Props) {
   return (
-    <SidebarProvider>
-      <Sidebar>
-        <AppSidebar />
-      </Sidebar>
-      <SidebarInset>
-        <AppHeader />
-        {children}
-      </SidebarInset>
-    </SidebarProvider>
+    <div className="flex flex-col min-h-screen">
+      <AppHeader />
+      {children}
+    </div>
   );
 }
