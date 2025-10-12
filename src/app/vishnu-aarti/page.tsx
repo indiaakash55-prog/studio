@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function VishnuAartiPage() {
-  return <ContentPage title={vishnuAarti.title} content={vishnuAarti.text} />;
+  return <ContentPage title="श्री विष्णु जी की आरती" content={vishnuAarti.text} />;
 }
