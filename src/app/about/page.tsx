@@ -10,7 +10,6 @@ import Link from "next/link";
 import { Home, Info, Code, User, Mail } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { OmIcon } from "@/components/icons/om-icon";
 
 export const metadata: Metadata = {
   title: 'हमारे बारे में | ऋषि विद्या',
@@ -29,6 +28,7 @@ const developerContent = {
   title: "ऐप डेवलपर / App Developer",
   text: "यह वेबसाइट आकाश उपाध्याय द्वारा बनाई गई है।",
   englishText: "This website was created by Akash Upadhyay.",
+  education: "Akash Upadhyay is a B.Sc (CS) student in RMPSU Aligarh.",
   email: "developerakash55ind@gmail.com",
 };
 
@@ -84,6 +84,9 @@ export default function AboutPage() {
                 </p>
                  <p className="font-body text-md text-foreground/80">
                     {developerContent.englishText}
+                </p>
+                 <p className="font-body text-md text-foreground/80">
+                    {developerContent.education}
                 </p>
               </div>
           </div>
