@@ -7,7 +7,7 @@ import {
 import type { Metadata } from 'next';
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Home, Info, Code, User } from "lucide-react";
+import { Home, Info, Code, User, Mail } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
@@ -28,6 +28,7 @@ const developerContent = {
   title: "ऐप डेवलपर / App Developer",
   text: "यह वेबसाइट आकाश उपाध्याय द्वारा बनाई गई है।",
   englishText: "This website was created by Akash Upadhyay.",
+  email: "developerakash55ind@gmail.com",
 };
 
 
@@ -72,6 +73,10 @@ export default function AboutPage() {
                    <Code className="h-5 w-5" />
                   {developerContent.title}
                 </p>
+                 <a href={`mailto:${developerContent.email}`} className="text-muted-foreground font-body text-base flex items-center justify-center gap-2 hover:text-primary transition-colors">
+                   <Mail className="h-5 w-5" />
+                  {developerContent.email}
+                </a>
                 <p className="font-body text-md text-foreground/90 pt-2">
                     {developerContent.text}
                 </p>
