@@ -7,6 +7,7 @@ import {
   BookHeart,
   BookOpenText,
   Home,
+  Info,
   Shield,
   Sparkles,
 } from "lucide-react";
@@ -29,6 +30,7 @@ const links = [
   { href: "/jaharveer-baba-aarti", label: "Jaharveer Baba Aarti", icon: <Sparkles /> },
   { href: "/divya-mantra-kosh", label: "Mantra Kosh", icon: <Shield /> },
   { href: "/puja-vidhiyan", label: "Puja Vidhiyan", icon: <BookHeart /> },
+  { href: "/about", label: "About Us", icon: <Info /> },
 ];
 
 function NavLinks() {
