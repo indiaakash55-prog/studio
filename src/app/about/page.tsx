@@ -10,6 +10,7 @@ import Link from "next/link";
 import { Home, Info, Code, User, Mail } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { OmIcon } from "@/components/icons/om-icon";
 
 export const metadata: Metadata = {
   title: 'हमारे बारे में | ऋषि विद्या',
@@ -60,9 +61,10 @@ export default function AboutPage() {
           <Separator className="my-8 bg-border/50" />
 
           <div className="flex flex-col items-center text-center gap-6">
-              <Avatar className="h-24 w-24 border-4 border-primary/50 shadow-lg">
-                <AvatarImage src="https://picsum.photos/seed/akash/200" alt="आकाश उपाध्याय" data-ai-hint="profile picture" />
-                <AvatarFallback>AU</AvatarFallback>
+              <Avatar className="h-24 w-24 border-4 border-primary/50 shadow-lg flex items-center justify-center">
+                <AvatarFallback className="text-6xl text-primary bg-transparent">
+                  ॐ
+                </AvatarFallback>
               </Avatar>
               <div className="space-y-2">
                 <h3 className="font-headline text-2xl text-primary flex items-center justify-center gap-2">
