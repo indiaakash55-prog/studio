@@ -26,7 +26,6 @@ const aboutContent = {
 const developerContent = {
   name: "आकाश उपाध्याय / Akash Upadhyay",
   title: "ऐप डेवलपर / App Developer",
-  text: "यह वेबसाइट आकाश उपाध्याय द्वारा बनाई गई है।",
   englishText: "This website was created by Akash Upadhyay.",
   education: "Akash Upadhyay is a B.Sc (CS) student in RMPSU Aligarh.",
   email: "developerakash55ind@gmail.com",
@@ -79,10 +78,7 @@ export default function AboutPage() {
                    <Mail className="h-5 w-5" />
                   {developerContent.email}
                 </a>
-                <p className="font-body text-md text-foreground/90 pt-2">
-                    {developerContent.text}
-                </p>
-                 <p className="font-body text-md text-foreground/80">
+                 <p className="font-body text-md text-foreground/80 pt-2">
                     {developerContent.englishText}
                 </p>
                  <p className="font-body text-md text-foreground/80">
