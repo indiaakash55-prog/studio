@@ -33,7 +33,7 @@ const links = [
   { href: "/about", label: "About Us", icon: <Info /> },
 ];
 
-function NavLinks() {
+function NavLinks({ onLinkClick }: { onLinkClick?: () => void }) {
   const pathname = usePathname();
   return (
     <nav className="flex flex-col gap-2">
@@ -43,6 +43,7 @@ function NavLinks() {
           asChild
           variant={pathname === link.href ? "secondary" : "ghost"}
           className="justify-start gap-2"
+          onClick={onLinkClick}
         >
           <Link href={link.href}>
             {React.cloneElement(link.icon, { className: "h-5 w-5" })}
@@ -88,7 +89,7 @@ export function AppHeader() {
                 </h1>
               </div>
               <div className="p-4">
-                <NavLinks />
+                <NavLinks onLinkClick={() => setOpen(false)} />
               </div>
           </SheetContent>
         </Sheet>
